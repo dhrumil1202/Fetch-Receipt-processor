@@ -138,10 +138,10 @@ Tests are written using `pytest` and `pytest-flask`. To run tests:
 ## Development Notes
 
 - **Project Structure**:
-  - `app.py`: Main entry point for the Flask application.
+  - `Receipt_processor.py`: Main entry point for the Flask application.
   - `endpoints/`: Contains separate files for each endpoint (e.g., `process_receipt.py`, `get_points.py`).
   - `utils/`: Contains utility functions for point calculation, broken down by rule.
-  - `tests/`: Contains test cases for endpoints and utility functions.
+  - `Unittests.py`: Contains test cases for endpoints and utility functions.
 
 - **Configuration**:
   - Modify configurations in `config.py` if additional settings are required in the future.
@@ -154,5 +154,3 @@ Tests are written using `pytest` and `pytest-flask`. To run tests:
     ```
 
 ---
-
-This README serves as both a guide and documentation to run, test, and develop on the Receipt Processor project. Happy coding!
