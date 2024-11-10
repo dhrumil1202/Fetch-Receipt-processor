@@ -33,6 +33,10 @@ def validate_receipt(receipt):
     except ValueError:
         return False, "Field 'total' should be a numeric value."
 
+    # Validate total to be more than 0.00
+    if float(receipt["total"]) < 0.00:
+        return False, "Total is less than Zero."
+
     # Validate items list
     for item in receipt["items"]:
         if "shortDescription" not in item or "price" not in item:

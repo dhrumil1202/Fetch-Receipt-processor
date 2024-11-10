@@ -17,7 +17,7 @@ receipts_key_value_pairs = {}
 def process_receipt():
     receipt = request.json
     if not receipt:
-        return jsonify({"error": "Invalid receipt"}), 400
+        return jsonify({"error": "Receipt is not provided"}), 400
 
     is_valid, error_message = validate_receipt(receipt)
     if not is_valid:
