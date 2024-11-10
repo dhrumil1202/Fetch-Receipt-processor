@@ -39,11 +39,6 @@ In-memory storage is used, meaning data does not persist when the application st
     cd receipt-processor
     ```
 
-2. Install dependencies using `requirements.txt`:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ### Docker Setup
 
 1. Build the Docker image:
@@ -58,7 +53,7 @@ In-memory storage is used, meaning data does not persist when the application st
 
 ## Running the Application
 
-After setting up the application, you can access it on `http://localhost:5000`.
+After setting up the application, you can access it on `http://localhost:5000` using postman to check output.
 
 ## API Documentation
 
@@ -67,6 +62,7 @@ After setting up the application, you can access it on `http://localhost:5000`.
 - **Description**: Accepts a receipt JSON object and calculates the points based on defined rules.
 - **Path**: `/receipts/process`
 - **Method**: `POST`
+- **Postman Command**: `http://localhost:5000/receipts/process`
 - **Request Body**:
     ```json
     {
@@ -97,6 +93,7 @@ After setting up the application, you can access it on `http://localhost:5000`.
 - **Description**: Retrieves the points awarded for a processed receipt.
 - **Path**: `/receipts/{id}/points`
 - **Method**: `GET`
+- **Postman Command**: `http://localhost:5000/receipts/{id}/points` 
 - **Response**:
     ```json
     { "points": 32 }
