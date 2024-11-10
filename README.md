@@ -140,9 +140,6 @@ Tests are written using `pytest` and `pytest-flask`. To run tests:
   - `utils/`: Contains utility functions for point calculation, broken down by rule.
   - `Unittests.py`: Contains test cases for endpoints and utility functions.
 
-- **Configuration**:
-  - Modify configurations in `config.py` if additional settings are required in the future.
-
 - **Docker**:
   - The application is containerized. To start fresh, stop any existing containers with:
     ```bash
